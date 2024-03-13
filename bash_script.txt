@@ -1,0 +1,138 @@
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+   ,     #_
+   ~\_  ####_        Amazon Linux 2
+  ~~  \_#####\
+  ~~     \###|       AL2 End of Life is 2025-06-30.
+  ~~       \#/ ___
+   ~~       V~' '->
+    ~~~         /    A newer version of Amazon Linux is available!
+      ~~._.   _/
+         _/ _/       Amazon Linux 2023, GA and supported until 2028-03-15.
+       _/m/'           https://aws.amazon.com/linux/amazon-linux-2023/
+
+[ec2-user@ip-10-0-10-12 ~]$ vi bash-script
+[ec2-user@ip-10-0-10-12 ~]$ vi bash-script
+[ec2-user@ip-10-0-10-12 ~]$ chmod +x bash-script
+[ec2-user@ip-10-0-10-12 ~]$ ./bash-script
+./bash-script: line 23: unexpected EOF while looking for matching `"'
+./bash-script: line 26: syntax error: unexpected end of file
+[ec2-user@ip-10-0-10-12 ~]$ cat bash-script
+#!/bin/bash
+
+yourName="Sylvia"
+
+# find the maximum existing number
+
+ maxNumber=0
+
+for file in $(ls -1 |grep $yourName[0-9]\+$" | sort -V); do
+ currentNumber=$(echo "$file" |grep oP '\d+')
+  if ((currentNumber > maxNumber)); then
+   maxNumber=$currentNumber
+  fi
+done
+
+
+# create the next batch of 25 file
+  for ((i = 1; i<=25; i++)); do
+          currentNumber=$((maxNumber + i))
+          touch "${yourName}${currentNumber}"
+  done
+
+echo "Files created: ${yourName}$maxNumber +1} to ${yourName}$currentNumber}"
+
+
+[ec2-user@ip-10-0-10-12 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-10-0-10-12 ~]$ ls
+bash-script  companyA
+[ec2-user@ip-10-0-10-12 ~]$ ./bash-script
+./bash-script: line 23: unexpected EOF while looking for matching `"'
+./bash-script: line 26: syntax error: unexpected end of file
+[ec2-user@ip-10-0-10-12 ~]$
+[ec2-user@ip-10-0-10-12 ~]$ vi bash-script
+[ec2-user@ip-10-0-10-12 ~]$ vi bash-script
+[ec2-user@ip-10-0-10-12 ~]$ chmod +x bash-script
+[ec2-user@ip-10-0-10-12 ~]$ [ec2-user@ip-10-0-10-12 ~]$ vi bash-script
+[ec2-user@ip-10-0-10-12 ~]$ ./bash-script
+./bash-script: line 23: unexpected EOF while looking for matching `"'
+./bash-script: line 26: syntax error: unexpected end of file
+[ec2-user@ip-10-0-10-12 ~]$ cat bash-script
+#!/bin/bash
+
+yourName="Sylvia"
+
+# find the maximum existing number
+
+ maxNumber=0
+
+for file in $(ls -1 |grep $yourName[0-9]\+$" | sort -V); do
+ currentNumber=$(echo "$file" |grep oP '\d+')
+  if ((currentNumber > maxNumber)); then
+   maxNumber=$currentNumber
+  fi
+done
+
+
+# create the next batch of 25 file
+  for ((i = 1; i<=25; i++)); do
+          currentNumber=$((maxNumber + i))
+          touch "${yourName}${currentNumber}"
+  done
+
+echo "Files created: ${yourName}$maxNumber +1} to ${yourName}$currentNumber}"
+
+
+[ec2-user@ip-10-0-10-12 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-10-0-10-12 ~]$ ls
+bash-script  companyA
+[ec2-user@ip-10-0-10-12 ~]$ ./bash-script
+./bash-script: line 23: unexpected EOF while looking for matching `"'
+./bash-script: line 26: syntax error: unexpected end of file
+[ec2-user@ip-10-0-10-12 ~]$
+-bash: [ec2-user@ip-10-0-10-12: command not found
+[ec2-user@ip-10-0-10-12 ~]$ [ec2-user@ip-10-0-10-12 ~]$ vi bash-script
+-bash: [ec2-user@ip-10-0-10-12: command not found
+[ec2-user@ip-10-0-10-12 ~]$ [ec2-user@ip-10-0-10-12 ~]$ chmod +x bash-script
+-bash: [ec2-user@ip-10-0-10-12: command not found
+[ec2-user@ip-10-0-10-12 ~]$ [ec2-user@ip-10-0-10-12 ~]$ ./bash-script
+-bash: [ec2-user@ip-10-0-10-12: command not found
+[ec2-user@ip-10-0-10-12 ~]$ ./bash-script: line 23: unexpected EOF while looking for matching `"'
+> ./bash-script: line 26: syntax error: unexpected end of file
+> [ec2-user@ip-10-0-10-12 ~]$ cat bash-script
+> #!/bin/bash
+>
+> yourName="Sylvia"
+>
+> # find the maximum existing number
+>
+>  maxNumber=0
+>
+> for file in $(ls -1 |grep $yourName[0-9]\+$" | sort -V); do
+>  currentNumber=$(echo "$file" |grep oP '\d+')
+>   if ((currentNumber > maxNumber)); then
+>    maxNumber=$currentNumber
+>   fi
+> done
+>
+>
+> # create the next batch of 25 file
+>   for ((i = 1; i<=25; i++)); do
+>           currentNumber=$((maxNumber + i))
+>           touch "${yourName}${currentNumber}"
+>   done
+>
+> echo "Files created: ${yourName}$maxNumber +1} to ${yourName}$currentNumber}"
+>
+>
+> [ec2-user@ip-10-0-10-12 ~]$ pwd
+> /home/ec2-user
+> [ec2-user@ip-10-0-10-12 ~]$ ls
+> bash-script  companyA
+> [ec2-user@ip-10-0-10-12 ~]$ ./bash-script
+> ./bash-script: line 23: unexpected EOF while looking for matching `"'
+> ./bash-script: line 26: syntax error: unexpected end of file
+> [ec2-user@ip-10-0-10-12 ~]$
+>

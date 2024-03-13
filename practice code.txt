@@ -1,0 +1,19 @@
+import sqlite3
+import csv
+ 
+conn = sqlite3.connect("employees.db")
+cur = conn.cursor()
+# name = input("Enter the name of your employee ")
+# salary = int(input("Enter the salary of the employee "))
+# cur.execute("insert into salaries VALUES(?,?)",(name,salary))
+with open("employees.csv","r") as csvFile:
+    csvReader = csv.reader(csvFile)
+ 
+    next(csvReader)
+    for row in csvReader:
+        cur.execute("insert into employees VALUES(?,?,?,?,?,?,?,?,?,?,?)",row)
+# cur.execute(f"insert into salaries VALUES('{name}',{salary})")
+print("data file executed")
+conn.commit()
+cur.close
+conn.close(), 
